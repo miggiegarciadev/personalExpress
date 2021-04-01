@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <title>café caliente</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+<section class="outline">
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <h1>Baristas </h1>
+        <img src="img/logo.png" alt="cafe calient de miggie logo with espresso machine">
+
+        <p>Login or Signup to see Orders:</p>
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+
+    </div>
+
+</div>
+
+<section class="CashierContainer text-center">
+
+
+   <div class="CashierTitle">
+     <h2>Cashier: Input Customer's Order Below</h2>
+   </div>
+   <form class="CashierTitle"action="/messages" method="POST">
+     <input class="nameTwo" type="text" value="" placeholder="customer name" name="name">
+     <input class="orderTwo" type="text" placeholder="special instructions" name="order" >
+     <p></p>
+     <label for="espresso">Oat Milk</label>
+     <input type="radio" placeholder="Espresso Shot" name="espresso">
+    <p></p>
+
+     <label for="caramel">Cow Milk</label>
+     <input type="radio" placeholder="Caramel Pump" name="caramel">
+    <p></p>
+
+     <label for="sugar">No Milk</label>
+     <input type="radio" placeholder="sugar" name="sugar">
+    <p></p>
+
+     <label for="cream">Organic Coconut Milk</label>
+     <input type="radio" placeholder="Cream" name="cream">
+    <p></p>
+
+     <label for="milk">Goat Milk</label>
+     <input type="radio" placeholder="Milk" name="milk">
+
+     <p></p>
+     <select class="Size" name="size">
+       <option  value="Small">Small</option>
+       <option value="Medium">Medium</option>
+       <option value="Large">Large</option>
+     </select>
+
+     <button type="submit">Enter</button>
+   </form>
+
+
+   </section>
+
+</section>
+</body>
+</html>
